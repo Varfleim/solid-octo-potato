@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="resetPuzzleButton">Новый пазл</button>
+
+    <div id="initWindow" class="modal">
+        <div class="modal-content">
+            <div>
+                <p>Выберите картинку для пазла:</p>
+                <input type="file" id="imageInput">
+                <button id="setImageButton">Загрузить</button>
+                <img id="previewImage" class="preview-image">
+                <img id="sourceImage" class="source-image">
+            </div>
+            <div>
+                <p>Укажите количество рядов и столбцов:</p>
+                <input type="number" id="rowInput">
+                <input type="number" id="cellInput">
+            </div>
+            <div>
+                <p></p>
+                <button id="newPuzzleButton">Создать пазл</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cellTable">
+
+    </div>
+    <p></p>
+    <h1 id="congratulation" class="hide">Поздравляю, вы собрали пазл!</h1>
+    <p></p>
+    <div id="fragmentsList">
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
